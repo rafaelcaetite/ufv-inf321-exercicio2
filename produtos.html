@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Minha Loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <p><a href="index.html">Início</a> | <a href="disciplina.html">Ir para Página da Disciplina</a></p>
+    </nav>
+
+    <div class="container">
+
+        <div class="ecommerce-box">
+            <!-- Barra superior PRODUTOS (Slide 61) -->
+            <div class="topo-produtos">
+                <h1>PRODUTOS</h1>
+            </div>
+
+            <div class="ecommerce-corpo">
+                <h2>Produtos disponíveis</h2>
+                <p>Catálogo de informática e eletrônicos estilizado com CSS Flexbox.</p>
+
+                <!-- Cards dos Produtos (Slide 61 e 63) -->
+                <div class="cards-container">
+                    
+                    <div class="card">
+                        <img src="img/notebook.jpg" alt="Notebook" class="card-img">
+                        <h3>Notebook</h3>
+                        <p class="descricao">Processador Intel Core i5, 8GB de memória RAM e SSD de 256GB.</p>
+                        <p class="preco">R$ 5.000</p>
+                        <button type="button" class="btn-comprar">Comprar</button>
+                        <a href="#" class="detalhes">Ver detalhes</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/celular.jpg" alt="Celular" class="card-img">
+                        <h3>Celular</h3>
+                        <p class="descricao">Tela AMOLED de 6.5 polegadas, 128GB de armazenamento e câmera tripla.</p>
+                        <p class="preco">R$ 3.000</p>
+                        <button type="button" class="btn-comprar">Comprar</button>
+                        <a href="#" class="detalhes">Ver detalhes</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/tablet.jpg" alt="Tablet" class="card-img">
+                        <h3>Tablet</h3>
+                        <p class="descricao">Tela de 10 polegadas, suporte a caneta stylus e bateria de longa duração.</p>
+                        <p class="preco">R$ 2.000</p>
+                        <button type="button" class="btn-comprar">Comprar</button>
+                        <a href="#" class="detalhes">Ver detalhes</a>
+                    </div>
+
+                </div>
+
+                <h3 style="margin-top: 25px;">Outros produtos</h3>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="img/mouse.jpg" alt="Mouse Sem Fio Logitech" class="card-img">
+                        <h3>Mouse Sem Fio Logitech M170</h3>
+                        <p class="descricao">Conexão sem fio 2.4 GHz, sensor óptico de 1000 DPI e autonomia de até 12 meses.</p>
+                        <p class="preco">R$ 69,90</p>
+                        <button type="button" class="btn-comprar">Comprar</button>
+                        <a href="#" class="detalhes">Ver detalhes</a>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/teclado.jpg" alt="Teclado Mecânico Redragon" class="card-img">
+                        <h3>Teclado Mecânico Redragon Kumara</h3>
+                        <p class="descricao">Padrão ABNT2, switches mecânicos Outemu Blue e iluminação LED vermelha.</p>
+                        <p class="preco">R$ 219,00</p>
+                        <button type="button" class="btn-comprar">Comprar</button>
+                        <a href="#" class="detalhes">Ver detalhes</a>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 25px;">Tabela de Preços</h3>
+                <div class="tabela-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Preço</th>
+                                <th>Disponibilidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Notebook</td>
+                                <td><strong style="color: #10b981;">R$ 5.000</strong></td>
+                                <td>Em estoque</td>
+                            </tr>
+                            <tr>
+                                <td>Celular</td>
+                                <td><strong style="color: #10b981;">R$ 3.000</strong></td>
+                                <td>Em estoque</td>
+                            </tr>
+                            <tr>
+                                <td>Tablet</td>
+                                <td><strong style="color: #10b981;">R$ 2.000</strong></td>
+                                <td>Em estoque</td>
+                            </tr>
+                            <tr>
+                                <td>Mouse Sem Fio Logitech</td>
+                                <td><strong style="color: #10b981;">R$ 69,90</strong></td>
+                                <td>Em estoque</td>
+                            </tr>
+                            <tr>
+                                <td>Teclado Mecânico Redragon</td>
+                                <td><strong style="color: #10b981;">R$ 219,00</strong></td>
+                                <td>Últimas unidades</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 style="margin-top: 25px;">Cadastrar produto</h3>
+                <form action="#" method="post">
+                    <p>
+                        <label for="nome">Nome do produto:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: Monitor 24 Polegadas" required>
+                    </p>
+                    <p>
+                        <label for="preco">Preço (R$):</label>
+                        <input type="number" id="preco" name="preco" step="0.01" placeholder="Ex: 850.00" required>
+                    </p>
+                    <p>
+                        <label for="foto">Foto do produto (URL ou caminho):</label>
+                        <input type="text" id="foto" name="foto" placeholder="img/produto.jpg" required>
+                    </p>
+                    <p>
+                        <label for="descricao">Descrição do produto:</label>
+                        <textarea id="descricao" name="descricao" rows="4" placeholder="Digite as especificações do produto"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit">Cadastrar Novo Produto</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Minha loja</p>
+        <p>Aluno: Rafael Caetité</p>
+    </footer>
+
+</body>
+</html>
